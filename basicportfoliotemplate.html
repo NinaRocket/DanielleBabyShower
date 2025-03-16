@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle's Baby Shower</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar pl-bg fixed-top navbar-expand-lg navbar-light">
+        <!-- <div class="container"> -->
+            <a class="navbar-brand" href="#"><h2>Baby Shower</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#invite">Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#registry">Registry</a></li>
+
+                </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="home-text">Danielle's Baby Shower</h1>
+            <p class="lead">Hailey Juliette Kruger is due to arrive June 27th - let's celebrate!</p>
+            <a href="#invite" class="btn btn-primary">Party Details</a>
+            <br><br>
+            <a href="#registry" class="btn btn-primary">Registry</a>
+        </div>
+    </header>
+
+    <!-- Invitation Details Section -->
+    <section id="invite" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+              
+                    <div class="invitation">
+                        <h2>You're Invited!</h2>
+                        <p class="details">📅 <strong>Date:</strong> Saturday, April 19th, 2025</p>
+                        <p class="details">⏰ <strong>Time:</strong> 1pm to 3pm</p>
+                        <p class="details">📍 <strong>Location:</strong> 43rd Ave and Cactus <br> (Address sent upon RSVP)</p>
+                        <p class="details">💌 <strong>RSVP</strong> to Danielle by April 12th<br> </p>
+                        <p style="text-align:start;">
+                            Come celebrate the upcoming arrival of our little bundle of joy! 🐥 
+                            There will be food, <strong>games</strong>, and lots of love to share. We can't wait to see you there!
+                            <br><br>
+                            <p style="text-align:start;"> 🍕 <strong>Pizza</strong> (Hungry Howie's) and <strong>Cake</strong> provided (Gluten Free Options as well) <br> Please feel free to bring a side dish - keep in mind Danielle and others are <strong>gluten-free</strong> 😊</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registry Section -->
+    <section id="registry" class="py-5 pl-bg">
+        <div class="container">
+            <section class="registry">
+                <h2>🍼 Registries</h2>
+            
+                <div class="registry-card">
+                    <p><strong>Amazon:</strong> <br>
+                        <a href="https://www.amazon.com/baby-reg/danielle-kosten-todd-kruger-june-2025-elmirage/1025ZQPB334Y9" target="_blank" class="btn">View Registry</a>
+                    </p>
+            
+                    <p><strong>Target:</strong> <br>
+                   
+                        <a href="https://www.target.com/gift-registry/gift/krusten-baby" target="_blank" class="btn">View Registry</a>
+                    </p>
+            
+                    <p><strong>Walmart:</strong> <br>
+                     
+                        <a href="https://www.walmart.com/registry/br/9369c607-9ac2-4a3d-b3c8-1e8ee5a1692a" target="_blank" class="btn">View Registry</a>
+                    </p>
+            
+                    <p><strong>Babylist:</strong> <br>
+               
+                        <a href="https://my.babylist.com/danielle-kosten" target="_blank" class="btn">View Registry</a>
+                    </p>
+            
+                    <p><strong>Kohl's:</strong> <br>
+                
+                        <a href="https://www.kohls.com/babyregistry/5e8a046a-8980-4451-8955-1057e6b48cce" target="_blank" class="btn">View Registry</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2025 Danielle's Baby Shower All rights reserved.</p>
+        </div>
+    </footer>
+
+<style>
+    /* Hero Section - Parallax Effect */
+.hero {
+    position: relative;
+    background-image: url('./balloonbbshower.jpg'); /* Update with correct image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* KEY for the Parallax Effect */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+.hero .container {
+    position: relative;
+    z-index: 1; /* Ensures text appears above overlay */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.pl-bg{
+    background-color:#eae5ed;
+}
+h1{
+    color:#c372f3;
+}
+h2{
+    color:#c372f3;
+}
+ul li{
+    text-decoration:none !important;
+}
+.home-text{
+    font-size: 48px;
+            font-weight: 600;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+            color: #d896ff;
+}
+.btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            background: linear-gradient(135deg, #a855f7, #6d28d9); /* Pretty Purple Gradient */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #9333ea, #4c1d95);
+            transform: scale(1.05);
+        }
+.nav-link{
+    font-weight: 600;
+}
+.invitation {
+    width: 90%;
+    margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .invitation h2 {
+            color: #c372f3;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .invitation p {
+            font-size: 18px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .invitation .details {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            text-align:start;
+            padding:5px;
+        }
+
+        .registry {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .registry h2 {
+        font-size: 32px;
+        color: #a855f7; /* Soft purple */
+        margin-bottom: 20px;
+        text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .registry-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .registry-card p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .registry .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background: linear-gradient(135deg, #a855f7, #6d28d9);
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(168, 85, 247, 0.4);
+    }
+
+   .registry .btn:hover {
+        background: linear-gradient(135deg, #9333ea, #4c1d95);
+        transform: scale(1.05);
+    }
+</style>
+ 
